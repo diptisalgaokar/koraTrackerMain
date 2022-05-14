@@ -1,2 +1,2 @@
 # kora-tracker
-Time tracker application for all and outsider
+Time tracker application adfa sdfsfor all and outsider
