@@ -1,9 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
+
 
 @Component({
   selector: 'app-admin-sidenav',
   templateUrl: './admin-sidenav.component.html',
-  styleUrls: ['./admin-sidenav.component.css']
+  styleUrls: ['./admin-sidenav.component.scss']
 })
 export class AdminSidenavComponent implements OnInit {
 
@@ -11,5 +12,6 @@ export class AdminSidenavComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
 
 }

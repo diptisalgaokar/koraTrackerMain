@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { Page404Component } from './page404/page404.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -12,7 +13,7 @@ import { Page404Component } from './page404/page404.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
