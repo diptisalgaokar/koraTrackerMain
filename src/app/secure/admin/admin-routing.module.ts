@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AdminInitComponent } from './admin-init/admin-init.component';
+import { AdminSidenavComponent } from './admin-sidenav/admin-sidenav.component';
 import { ProfileComponent } from 'src/app/shared/shared-components/profile/profile.component';
 import { EmployeeDetailsComponent } from './employee-details/employee-details.component';
 import { ProjectsComponent } from './projects/projects.component';
@@ -10,9 +10,8 @@ import { LogoutComponent } from 'src/app/shared/shared-components/logout/logout.
 
 const routes: Routes = [
   {
-    path: '', component: AdminInitComponent,
+    path: '', component: AdminSidenavComponent,
     children: [
-      // { path: 'admin-sidenav', component: AdminSidenavComponent },
       { path: 'profile', component: ProfileComponent },
       { path: 'employee-details', component: EmployeeDetailsComponent },
       { path: 'projects', component: ProjectsComponent},

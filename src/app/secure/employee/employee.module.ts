@@ -4,7 +4,6 @@ import { CommonModule } from '@angular/common';
 import { EmployeeRoutingModule } from './employee-routing.module';
 import { WorkreportComponent } from './workreport/workreport.component';
 import { TimesheetComponent } from './timesheet/timesheet.component';
-import { EmployeeInitComponent } from './employee-init/employee-init.component';
 import { EmployeeSidenavComponent } from './employee-sidenav/employee-sidenav.component';
 
 
@@ -12,7 +11,6 @@ import { EmployeeSidenavComponent } from './employee-sidenav/employee-sidenav.co
   declarations: [
     WorkreportComponent,
     TimesheetComponent,
-    EmployeeInitComponent,
     EmployeeSidenavComponent
   ],
   imports: [

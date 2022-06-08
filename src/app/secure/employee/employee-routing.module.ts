@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { EmployeeInitComponent } from './employee-init/employee-init.component';
+import { EmployeeSidenavComponent } from './employee-sidenav/employee-sidenav.component';
 import { ProfileComponent } from 'src/app/shared/shared-components/profile/profile.component';
 import { TimesheetComponent } from './timesheet/timesheet.component';
 import { WorkreportComponent } from './workreport/workreport.component';
@@ -10,7 +10,7 @@ import { LogoutComponent } from 'src/app/shared/shared-components/logout/logout.
 const routes: Routes = [
   {
     path: '',
-    component: EmployeeInitComponent,
+    component: EmployeeSidenavComponent,
     children: [
       { path: 'profile', component: ProfileComponent },
       { path: 'timesheet', component: TimesheetComponent },
