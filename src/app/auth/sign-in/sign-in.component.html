@@ -1,1 +1,54 @@
-<p>sign-in works!</p>
+<div class="control-section form-center">
+    <div class="content-wrapper" style="margin-bottom: 25px;">
+        <form id="formId" [formGroup]="reactForm" #formDir="ngForm" class="form-horizontal" novalidate="">
+            <div>
+                    <div class="formtitle">
+                        <fa-icon [icon]="faLock" class="fa-3x"></fa-icon>
+                        <h1>Welcome</h1>
+                        <p>Please enter your login details</p>
+                    </div>
+
+            </div>
+            <div >
+                <div class="form-group" style="margin-bottom:20px;">
+                    <div class="e-float-input">
+                        <input id="email" type="text" formControlName="email" class="form-control" placeholder="Email"  name="email">
+                        <span class="e-float-line"></span>
+                        <label for="email_check" class="e-float-text">Email</label>
+                    </div>
+                    <div *ngIf="email.errors ">
+                        <div *ngIf="email.errors?.['email'] && email.touched" class="e-error ">
+                            Please enter a valid email address.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="e-float-input">
+                        <input id="password" type="password" formControlName="password" name="password" class="form-control" placeholder="Password">
+                        <span class="e-float-line"></span>
+                        <label for="password" class="e-float-text">Password</label>
+                    </div>
+                    <div *ngIf="password.errors">
+                        <div *ngIf="password.errors?.['required'] && password.touched" class="e-error">
+                            This field is required.
+                        </div>
+                    </div>
+                </div>
+
+                <div style="text-align: center; margin: 40px 0px">
+                    <button type="submit" id="validateSubmit" class="samplebtn e-control e-btn e-primary Btn" type="submit" style="" data-ripple="true">Login</button>
+                </div>
+                <div class="" style="background-color:lightgray; height:30px; text-align: right;">
+                   <a routerLink="/auth/reset-password" class="float-right reset-pw-btn">Forgot Password
+                    <fa-icon [icon]="faArrowRight"></fa-icon>
+                   </a>
+                   
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+

@@ -1,1 +1,91 @@
-<p>projects works!</p>
+
+<div style="text-align:right;margin-bottom: 30px;">
+    <button type="button" class="Btn" data-toggle="modal" data-target="#exampleModal">
+        Add Project
+      </button>
+</div>
+
+  
+  
+  <div class="modal fade" id="exampleModal" data-backdrop="false" style="background-color: rgba(0, 0, 0, 0.5);" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+          <form id="formId" [formGroup]="reactForm" #formDir="ngForm" class="form-horizontal add-emp-form modal-content emp-form-container" novalidate="">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="position:absolute; right:20px;">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            <div>
+                    <div class="formtitle">
+                        <span>Add Project Details</span>
+                    </div>
+        
+            </div>
+                <div class="form-group">
+                    <div class="e-float-input">
+                        <input id="p_name" type="text" formControlName="p_name" class="form-control" placeholder="Project Name">
+                        <span class="e-float-line"></span>
+                        <!-- <label for="p_name" class="e-float-text">Project Name</label> -->
+                    </div>
+                    <div *ngIf="p_name.errors">
+                        <div *ngIf="p_name.errors?.['required'] && p_name.touched" class="e-error">
+                            This field is required.
+                        </div>
+                    </div>
+                </div>
+
+            <div class="form-group">
+                <div class="e-float-input">
+                    <input id="date" type="text" formControlName="date" class="form-control" placeholder="Date(Y/M/D)">
+                    <span class="e-float-line"></span>
+                    <!-- <label for="date" class="e-float-text" >Date</label> -->
+                    <div *ngIf="date.errors ">
+                        <div *ngIf="date.errors?.['date'] && date.touched" class="e-error">
+                            Please enter a valid date.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="e-float-input">
+                    <textarea rows="4" id="Description" name="Description" formControlName="Description" class="form-control" placeholder="Project Description"></textarea>
+                    <span class="e-float-line"></span>
+                    <!-- <label class="e-float-text" for="Description">Description</label> -->
+                    <div *ngIf="Description.errors ">
+                        <div *ngIf="Description.errors?.['required'] && Description.touched" class="e-error">
+                            Please enter Project Description.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+                <div class="row">
+                    <div style="width: 400px;margin:0px auto;">
+                        <div style="display: inline-block;">
+                            <button id="validateSubmit" class="samplebtn e-control e-btn e-primary Btn" type="submit" style="" data-ripple="true">Add Project</button>
+                        </div>
+                        <div style="float: right;">
+                            <button id="resetbtn" class="samplebtn e-control e-btn Btn" type="reset" style="" data-ripple="true">Reset</button>
+                        </div>
+                    </div>
+                </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+  
+<div style="background-color: rgba(135, 146, 155, 0.452);padding: 20px; width:800px; margin:0px auto; border-radius: 5px;">
+    <div class="control-section">
+        <ejs-grid [dataSource]='data' height='350'>
+            <e-columns>
+                <e-column field='P_ID' headerText='Project ID' width='50' textAlign='Center'></e-column>
+                <e-column field='Project_Name' headerText='Project Name' width='50' textAlign='Center'></e-column>
+                <e-column field='Description' headerText='Description' width='50' textAlign='Center'></e-column>
+                <e-column field='Date' headerText='Date' width='50' format="yMd" textAlign='Center'></e-column>
+            </e-columns>
+        </ejs-grid>
+    </div>
+</div>
+

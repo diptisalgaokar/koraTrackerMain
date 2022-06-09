@@ -1,8 +1,44 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import '../node_modules/@syncfusion/ej2-base/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-angular-navigations/styles/material.css';
+
 *{
     list-style: none;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
+}
+
+h2{
+    font-size:50px;
+    color:rgb(5, 68, 104);
+    text-align: center;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+h3{
+    font-size:20px;
+}
+
+.Btn{
+    background-color: rgb(5, 68, 104);
+    color:#ffffff;
+    width:200px;
+    font-size: 15px;
+    border-radius: 5px;
+    border:none;
+    outline:none;
+    height:50px;
+    text-align: center;
+    text-transform: uppercase;
+    padding:10px;
+}
+.Btn:hover{
+    background-color:rgb(3, 35, 54) ;
+}
+label{
+    color:rgb(5, 68, 104);
+    font-size: 20px;
 }

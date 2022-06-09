@@ -8,6 +8,9 @@ import { ReportsComponent } from './reports/reports.component';
 import { AdminSidenavComponent } from './admin-sidenav/admin-sidenav.component';
 import { SidebarModule } from '@syncfusion/ej2-angular-navigations';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
+import { GridModule } from '@syncfusion/ej2-angular-grids';
 
 
 @NgModule({
@@ -22,6 +25,9 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     AdminRoutingModule,
     SidebarModule,
     FontAwesomeModule,
+    FormsModule,
+    GridModule,
+    ReactiveFormsModule,
   ]
 })
 export class AdminModule { }

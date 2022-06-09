@@ -1,4 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
+@import url(c:\Users\lenovo\Desktop\github\kora-tracker\node_modules\@syncfusion\ej2-base\styles\material.css);
+@import url(c:\Users\lenovo\Desktop\github\kora-tracker\node_modules\@syncfusion\ej2-angular-navigations\styles\material.css);
 * {
   list-style: none;
   margin: 0;
@@ -6,5 +8,36 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: 'Open Sans', sans-serif;
+}
+
+h2 {
+  font-size: 50px;
+  color: #054468;
+  text-align: center;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+
+.Btn {
+  background-color: #054468;
+  color: #ffffff;
+  width: 200px;
+  font-size: 15px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  height: 50px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 10px;
+}
+
+.Btn:hover {
+  background-color: #032336;
+}
+
+label {
+  color: #054468;
+  font-size: 20px;
 }
 /*# sourceMappingURL=styles.css.map */
