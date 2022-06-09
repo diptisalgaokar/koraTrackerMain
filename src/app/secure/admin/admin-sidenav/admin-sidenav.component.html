@@ -1,6 +1,5 @@
 <div id='container'>
     <div id="wrapper">
-        <!-- <app-admin-sidenav></app-admin-sidenav> -->
         <ejs-sidebar id="default-sidebar"  #sidebar [width]='width' (created)="onCreated($event)" style="visibility: hidden; padding-top:30px;" class="mysidebar">
             <div class="sidebar-header header-cover sidenav">
                 <div class="profile">
@@ -17,8 +16,6 @@
                             <div class="icon-width">
                                 <fa-icon [icon]="faUser" class="icon"></fa-icon>
                             </div>
-                            
-                            <!-- <span class="e-icons e-user"></span> -->
                             <div class="text-width">
                                 <span class="e-text">Profile</span>
                             </div>
@@ -69,7 +66,6 @@
         <div>
                 <div class="content">
                     <div id="left">
-                        <!-- <span id="hamburger" class="e-icons menu default" (click)="openClick()"></span> -->
                         <fa-icon [icon]="faBars" id="hamburger" class="e-icons menu default" (click)="openClick()"></fa-icon>
                     </div>
                 </div>

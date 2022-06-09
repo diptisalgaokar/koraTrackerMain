@@ -1,1 +1,71 @@
-<p>employee-sidenav works!</p>
+<div id='container'>
+    <div id="wrapper">
+        <ejs-sidebar id="default-sidebar" #sidebar [width]='width' (created)="onCreated($event)" style="visibility: hidden; padding-top:30px;" class="mysidebar">
+                <div class="sidebar-header header-cover sidenav">
+                    <div class="profile">
+                        <img src="https://thumbs.dreamstime.com/b/default-avatar-profile-vector-user-profile-default-avatar-profile-vector-user-profile-profile-179376714.jpg">
+                        <h3>UserName</h3>
+                        <p>Role</p>
+                        <p>Active Status</p>
+                      </div>
+                    </div>
+
+                    <ul class="sidebar-nav">
+                        <li routerLinkActive="active">
+                            <a routerLink="./profile" >
+                                <div class="icon-width">
+                                    <fa-icon [icon]="faUser" class="icon"></fa-icon>
+                                </div>
+                                <div class="text-width">
+                                    <span class="e-text">Profile</span>
+                                </div>
+                                
+                            </a>
+                        </li>
+                        <li routerLinkActive="active">
+                            <a routerLink="./timesheet">
+                                <div class="icon-width">
+                                    <fa-icon [icon]="faFileLines" class="icon"></fa-icon>
+                                </div>
+                                <div class="text-width">
+                                    <span class="e-text">Timesheet</span>
+                                </div>
+                                
+                            </a>
+                        </li>
+                        <li routerLinkActive="active">
+                            <a routerLink="./workreport">
+                                <div class="icon-width">
+                                    <fa-icon [icon]="faChartPie" class="icon"></fa-icon>
+                                </div>
+                                <div class="text-width">
+                                    <span class="e-text">Workreport</span>
+                                </div>
+                                
+                            </a>
+                        </li>
+                        <li routerLinkActive="active">
+                            <a routerLink="./logout" data-toggle="modal" data-target="#exampleModal">
+                                <div class="icon-width">
+                                    <fa-icon [icon]="faArrowRightFromBracket" class="icon"></fa-icon>
+                                </div>
+                                <div class="text-width">
+                                    <span class="e-text">Logout</span>
+                                </div>
+                                
+                            </a>
+                        </li>
+                    </ul>
+        </ejs-sidebar>
+        <div>
+                <div class="content">
+                    <div id="left" style="position:fixed; top:0px; ">
+                        <fa-icon [icon]="faBars" id="hamburger" class="e-icons menu default" (click)="openClick()"></fa-icon>
+                    </div>
+                </div>
+                <div>
+                    <div class='content-container'style=""><router-outlet></router-outlet></div>
+                </div>
+            </div>
+    </div>
+</div>
