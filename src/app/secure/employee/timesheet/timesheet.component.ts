@@ -11,5 +11,8 @@ export class TimesheetComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  public data: string[] = ['Project1', 'Project2', 'Project3', 'Project4', 'Project5'];
+  public datedata: string[] = ['Today', 'Yesterday', 'DayBeforeYest'];
+
 
 }

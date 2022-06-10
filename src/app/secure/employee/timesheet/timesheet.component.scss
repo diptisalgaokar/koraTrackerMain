@@ -1,0 +1,58 @@
+@import '../../../../../node_modules/@syncfusion/ej2-base/styles/material.css';
+@import '../../../../../node_modules/@syncfusion/ej2-buttons/styles/material.css';
+@import '../../../../../node_modules/@syncfusion/ej2-dropdowns/styles/material.css';
+@import '../../../../../node_modules/@syncfusion/ej2-inputs/styles/material.css';
+@import '../../../../../node_modules/@syncfusion/ej2-popups/styles/material.css';
+@import '../../../../../node_modules/@syncfusion/ej2-lists/styles/material.css';
+@import '../../../../../node_modules/@syncfusion/ej2-angular-dropdowns/styles/material.css';
+
+.card-container{
+    width:700px;
+    background-color: rgba(135, 146, 155, 0.452);
+    padding:30px;
+    margin:0px auto;
+    border-radius:5px;
+
+
+}
+.timesheet-container{
+    background-color: #fff;
+    padding:20px;
+    border-radius:5px;
+}
+.input-container{
+  margin-bottom: 30px; 
+ }
+ 
+ .date-container{
+ margin-bottom:30px;
+     width:120px;
+ }
+ .dropdown-container{
+     display:inline-block;
+     margin-right: 100px;
+     vertical-align: bottom;
+ }
+ .description-container{
+     display:inline-block;
+     margin-right: 100px;
+     vertical-align: bottom;
+ }
+ .hours-container{
+    display:inline-block;
+    margin-top:0px;
+    
+ }
+ .save-btn{
+     width: 80px;
+     
+ }
+ .save-button{
+     text-align:right;
+ }
+
+
+
+
+
+
