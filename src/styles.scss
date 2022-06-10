@@ -22,7 +22,7 @@ h3{
     font-size:20px;
 }
 
-.Btn{
+.primary-Btn{
     background-color: rgb(5, 68, 104);
     color:#ffffff;
     width:200px;
@@ -35,8 +35,25 @@ h3{
     text-transform: uppercase;
     padding:10px;
 }
-.Btn:hover{
+.primary-Btn:hover{
     background-color:rgb(3, 35, 54) ;
+}
+.secondary-Btn{
+    background-color: #ffffff;
+    color:rgb(5, 68, 104);
+    width:170px;
+    font-size: 15px;
+    border-radius: 5px;
+    border:1px solid rgb(5, 68, 104);
+    // outline:none;
+    height:50px;
+    text-align: center;
+    text-transform: uppercase;
+    padding:10px;
+
+}
+.secondary-Btn:hover{
+    background-color: #aca9a970;
 }
 label{
     color:rgb(5, 68, 104);
