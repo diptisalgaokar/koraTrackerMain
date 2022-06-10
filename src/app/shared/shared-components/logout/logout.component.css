@@ -1,9 +1,4 @@
-.secondary-Btn {
-  width: 120px;
-  height: 40px;
-}
-
-.primary-Btn {
+.secondary-Btn, .primary-Btn {
   width: 120px;
   height: 40px;
 }

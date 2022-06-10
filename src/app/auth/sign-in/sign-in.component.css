@@ -1,13 +1,4 @@
-@import url(c:\Users\lenovo\Desktop\github\kora-tracker\node_modules\@syncfusion\ej2-inputs\styles\bootstrap5.css);
-.formtitle {
-  width: 100%;
-  text-align: center;
-  padding: 10px;
-  font-size: 16px;
-  font-weight: 500;
-  color: rgba(0, 0, 0, 0.7);
-}
-
+@import url(c:\Users\lenovo\Desktop\github test\kora-tracker\node_modules\@syncfusion\ej2-inputs\styles\bootstrap5.css);
 .form-center {
   position: absolute;
   top: 50%;
@@ -17,17 +8,17 @@
   width: 550px;
 }
 
-.e-error,
-.e-float-text {
-  font-weight: 500;
-  color: red;
-  font-size: 13px;
+.form-center .formtitle {
+  width: 100%;
+  text-align: center;
+  padding: 10px;
 }
 
-.e-custom-label {
-  font-size: 14px;
-  font-weight: 500;
-  margin-left: 20px;
+.form-center .formtitle h1 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 0px;
+  color: rgba(0, 0, 0, 0.7);
 }
 
 form {
@@ -45,23 +36,11 @@ form {
   margin-right: 20px;
 }
 
-.add-emp-form {
-  width: 500px;
-  margin: 0px auto;
-}
-
-.Btn {
-  height: 40px;
-  width: 150px;
-}
-
-.Btn:hover {
-  color: #ffffff;
-}
-
-.formtitle h1 {
-  font-size: 30px;
-  margin-bottom: 0px;
+.form-horizontal .form-group .e-error,
+.form-horizontal .form-group .e-float-text {
+  font-weight: 500;
+  color: red;
+  font-size: 13px;
 }
 
 .reset-pw-btn {

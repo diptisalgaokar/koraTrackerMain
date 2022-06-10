@@ -1,1 +1,14 @@
-/* No CSS *//*# sourceMappingURL=page404.component.css.map */
+.error-template {
+  padding: 40px 15px;
+  text-align: center;
+}
+
+.error-template .error-actions {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.error-template .error-actions .btn {
+  margin-right: 10px;
+}
+/*# sourceMappingURL=page404.component.css.map */

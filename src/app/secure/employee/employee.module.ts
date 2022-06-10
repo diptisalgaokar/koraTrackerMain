@@ -8,7 +8,8 @@ import { EmployeeSidenavComponent } from './employee-sidenav/employee-sidenav.co
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { SidebarModule } from '@syncfusion/ej2-angular-navigations';
 import { DropDownListModule } from '@syncfusion/ej2-angular-dropdowns';
-import { NumericTextBoxModule, TextBoxModule } from '@syncfusion/ej2-angular-inputs';
+import { TextBoxModule } from '@syncfusion/ej2-angular-inputs';
+import { NumericTextBoxModule } from '@syncfusion/ej2-angular-inputs';
 @NgModule({
   declarations: [
     WorkreportComponent,

@@ -1,1 +1,55 @@
-/* No CSS *//*# sourceMappingURL=timesheet.component.css.map */
+@import url(c:\Users\lenovo\Desktop\github test\kora-tracker\node_modules\@syncfusion\ej2-base\styles\material.css);
+@import url(c:\Users\lenovo\Desktop\github test\kora-tracker\node_modules\@syncfusion\ej2-buttons\styles\material.css);
+@import url(c:\Users\lenovo\Desktop\github test\kora-tracker\node_modules\@syncfusion\ej2-dropdowns\styles\material.css);
+@import url(c:\Users\lenovo\Desktop\github test\kora-tracker\node_modules\@syncfusion\ej2-inputs\styles\material.css);
+@import url(c:\Users\lenovo\Desktop\github test\kora-tracker\node_modules\@syncfusion\ej2-popups\styles\material.css);
+@import url(c:\Users\lenovo\Desktop\github test\kora-tracker\node_modules\@syncfusion\ej2-lists\styles\material.css);
+@import url(c:\Users\lenovo\Desktop\github test\kora-tracker\node_modules\@syncfusion\ej2-angular-dropdowns\styles\material.css);
+.card-container {
+  width: 700px;
+  background-color: rgba(135, 146, 155, 0.452);
+  padding: 30px;
+  margin: 0px auto;
+  border-radius: 5px;
+}
+
+.card-container .timesheet-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.card-container .timesheet-container .primary-Btn {
+  width: 80px;
+}
+
+.card-container .timesheet-container .save-button {
+  text-align: right;
+}
+
+.card-container .date-container {
+  margin-bottom: 30px;
+  width: 120px;
+}
+
+.input-container {
+  margin-bottom: 30px;
+}
+
+.input-container .dropdown-container {
+  display: inline-block;
+  margin-right: 100px;
+  vertical-align: bottom;
+}
+
+.input-container .description-container {
+  display: inline-block;
+  margin-right: 100px;
+  vertical-align: bottom;
+}
+
+.input-container .hours-container {
+  display: inline-block;
+  margin-top: 0px;
+}
+/*# sourceMappingURL=timesheet.component.css.map */

@@ -1,26 +1,6 @@
-@import url(c:\Users\lenovo\Desktop\github\kora-tracker\node_modules\@syncfusion\ej2-inputs\styles\bootstrap5.css);
-@import url(c:\Users\lenovo\Desktop\github\kora-tracker\node_modules\@syncfusion\ej2-angular-grids\styles\material.css);
-@import url(c:\Users\lenovo\Desktop\github\kora-tracker\node_modules\@syncfusion\ej2-popups\styles\bootstrap5.css);
-.formtitle {
-  width: 100%;
-  text-align: center;
-  padding: 10px;
-  font-size: 16px;
-  font-weight: 500;
-  color: rgba(0, 0, 0, 0.7);
-}
-
-.e-error,
-.e-float-text {
-  font-weight: 500;
-}
-
-.e-custom-label {
-  font-size: 14px;
-  font-weight: 500;
-  margin-left: 20px;
-}
-
+@import url(c:\Users\lenovo\Desktop\github test\kora-tracker\node_modules\@syncfusion\ej2-inputs\styles\bootstrap5.css);
+@import url(c:\Users\lenovo\Desktop\github test\kora-tracker\node_modules\@syncfusion\ej2-angular-grids\styles\material.css);
+@import url(c:\Users\lenovo\Desktop\github test\kora-tracker\node_modules\@syncfusion\ej2-popups\styles\bootstrap5.css);
 form {
   padding-top: 20px;
   margin-bottom: 45px;
@@ -36,9 +16,9 @@ form {
   margin-right: 20px;
 }
 
-.row {
-  padding-bottom: 30px;
-  padding-top: 25px;
+.form-horizontal .form-group .e-error,
+.form-horizontal .form-group .e-float-text {
+  font-weight: 500;
 }
 
 .add-emp-form {
@@ -46,19 +26,17 @@ form {
   margin: 0px auto;
 }
 
-.Btn {
-  height: 40px;
-  width: 150px;
-  border-radius: 5px;
-  background-color: #054468;
-}
-
-.Btn:hover {
-  background-color: #032438;
-  color: #ffffff;
-}
-
-.formtitle span {
+.add-emp-form .formtitle {
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  font-size: 16px;
   font-weight: bold;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.add-emp-form .row {
+  padding-bottom: 30px;
+  padding-top: 25px;
 }
 /*# sourceMappingURL=projects.component.css.map */

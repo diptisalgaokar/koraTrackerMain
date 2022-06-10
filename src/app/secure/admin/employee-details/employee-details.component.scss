@@ -1,24 +1,6 @@
 @import '../../../../../node_modules/@syncfusion/ej2-inputs/styles/bootstrap5.css';
 @import '../../../../../node_modules/@syncfusion/ej2-angular-grids/styles/material.css';
 @import '../../../../../node_modules/@syncfusion/ej2-popups/styles/bootstrap5.css';
-.formtitle {
-  width: 100%;
-  text-align: center;
-  padding: 10px;
-  font-size: 16px;
-  font-weight: 500;
-  color: rgba(0, 0, 0, 0.70);
-}
-.e-error,
-.e-float-text {
-  font-weight: 500;
-}
-
-.e-custom-label {
-  font-size: 14px;
-  font-weight: 500;
-  margin-left: 20px;
-}
 
 form {
   padding-top: 20px;
@@ -33,29 +15,34 @@ form {
 .form-horizontal .form-group {
   margin-left: 20px;
   margin-right: 20px;
+
+  .e-error,
+.e-float-text {
+  font-weight: 500;
+}
 }
 
-.row {
-  padding-bottom: 30px;
-  padding-top: 25px;
-}
+
 .add-emp-form{
   width:500px;
   margin:0px auto;
+
+  .formtitle {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.70);
+  }
+
+  .row {
+    padding-bottom: 30px;
+    padding-top: 25px;
+  }
 }
-.Btn{
-  height:40px;
-  width: 150px;
-  border-radius: 5px;
-  background-color: rgb(5, 68, 104);
-}
-.Btn:hover{
-  background-color: rgb(3, 36, 56);
-  color:#ffffff;
-}
-.formtitle span{
-  font-weight: bold;
-}
+
+
 
 
 
