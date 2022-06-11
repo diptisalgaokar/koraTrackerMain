@@ -11,7 +11,10 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import { GridModule } from '@syncfusion/ej2-angular-grids';
-
+import { ToolbarModule } from '@syncfusion/ej2-angular-navigations';
+import { NumericTextBoxAllModule } from '@syncfusion/ej2-angular-inputs';
+import { DialogModule } from '@syncfusion/ej2-angular-popups';
+import { DropDownListModule } from '@syncfusion/ej2-angular-dropdowns';
 
 @NgModule({
   declarations: [
@@ -28,6 +31,10 @@ import { GridModule } from '@syncfusion/ej2-angular-grids';
     FormsModule,
     GridModule,
     ReactiveFormsModule,
+    ToolbarModule,
+    NumericTextBoxAllModule,
+    DialogModule,
+    DropDownListModule
   ]
 })
 export class AdminModule { }

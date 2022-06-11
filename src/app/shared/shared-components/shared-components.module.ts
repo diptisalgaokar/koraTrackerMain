@@ -4,8 +4,10 @@ import { CommonModule } from '@angular/common';
 import { SharedComponentsRoutingModule } from './shared-components-routing.module';
 import { ProfileComponent } from './profile/profile.component';
 import { LogoutComponent } from './logout/logout.component';
-import { AdminSidenavComponent } from './admin-sidenav/admin-sidenav.component';
-import { EmployeeSidenavComponent } from './employee-sidenav/employee-sidenav.component';
+import { AdminSidenavComponent } from './../../secure/admin/admin-sidenav/admin-sidenav.component';
+import { EmployeeSidenavComponent } from './../../secure/employee/employee-sidenav/employee-sidenav.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { UploaderModule } from '@syncfusion/ej2-angular-inputs';
 
 
 @NgModule({
@@ -17,6 +19,9 @@ import { EmployeeSidenavComponent } from './employee-sidenav/employee-sidenav.co
   ],
   imports: [
     CommonModule,
+    FormsModule, 
+    ReactiveFormsModule,
+    UploaderModule,
     SharedComponentsRoutingModule
   ]
 })
