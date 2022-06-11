@@ -21,7 +21,7 @@ import { DropDownListModule } from '@syncfusion/ej2-angular-dropdowns';
     ProjectsComponent,
     EmployeeDetailsComponent,
     ReportsComponent,
-    AdminSidenavComponent,
+    AdminSidenavComponent
   ],
   imports: [
     CommonModule,
