@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl, FormGroup, Validators, FormsModule, AbstractControl, PatternValidator } from '@angular/forms';
-import { FormValidators, RemovingEventArgs, UploaderComponent } from '@syncfusion/ej2-angular-inputs';
+import { FormControl, FormGroup, Validators, FormsModule, ReactiveFormsModule, AbstractControl, PatternValidator } from '@angular/forms';
+import { FormValidators, RemovingEventArgs, UploaderComponent,UploaderModule } from '@syncfusion/ej2-angular-inputs';
 import { Event } from '@syncfusion/ej2-base';
 
 @Component({

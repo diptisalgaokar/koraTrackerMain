@@ -21,7 +21,6 @@ export class ReportsComponent {
     public pageSettings!: Object;
     public commands!: CommandModel[];
 
-  @ViewChild('sample')
   public listObj!: DropDownListComponent;
  // define the JSON of data
   constructor(){

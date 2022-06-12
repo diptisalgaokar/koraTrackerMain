@@ -10,6 +10,8 @@ import { SidebarModule } from '@syncfusion/ej2-angular-navigations';
 import { DropDownListModule } from '@syncfusion/ej2-angular-dropdowns';
 import { TextBoxModule } from '@syncfusion/ej2-angular-inputs';
 import { NumericTextBoxModule } from '@syncfusion/ej2-angular-inputs';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
 @NgModule({
   declarations: [
     WorkreportComponent,
@@ -24,8 +26,9 @@ import { NumericTextBoxModule } from '@syncfusion/ej2-angular-inputs';
     SidebarModule,
     DropDownListModule,
     NumericTextBoxModule,
-    TextBoxModule
-
+    TextBoxModule,
+    FormsModule, 
+    ReactiveFormsModule
 
   ]
 })
