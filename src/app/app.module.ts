@@ -20,7 +20,7 @@ import { DropDownListModule } from '@syncfusion/ej2-angular-dropdowns';
 @NgModule({
   declarations: [
     AppComponent,
-    Page404Component
+    Page404Component    
   ],
   imports: [
     GridModule,
@@ -35,7 +35,7 @@ import { DropDownListModule } from '@syncfusion/ej2-angular-dropdowns';
     BrowserModule,
     AppRoutingModule,
     UploaderModule,
-    DropDownListModule
+    DropDownListModule, 
     //NgModule
   ],
   providers: [],
