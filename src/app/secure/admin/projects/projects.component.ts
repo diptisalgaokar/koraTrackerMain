@@ -1,5 +1,5 @@
 import { Component, OnInit, ViewEncapsulation, ViewChild, ElementRef, AfterViewInit } from '@angular/core';
-import { FormControl, FormGroup, Validators, FormsModule, AbstractControl } from '@angular/forms';
+import { FormControl, FormGroup, Validators, FormsModule, AbstractControl,ReactiveFormsModule } from '@angular/forms';
 import { FormValidators } from '@syncfusion/ej2-angular-inputs';
 
 @Component({

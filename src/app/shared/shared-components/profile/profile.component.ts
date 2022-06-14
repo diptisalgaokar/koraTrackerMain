@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators, FormsModule, ReactiveFormsModule, AbstractControl, PatternValidator } from '@angular/forms';
-import { FormValidators, RemovingEventArgs, UploaderComponent,UploaderModule } from '@syncfusion/ej2-angular-inputs';
+import { FormValidators, RemovingEventArgs, UploaderComponent, UploaderModule } from '@syncfusion/ej2-angular-inputs';
 import { Event } from '@syncfusion/ej2-base';
 
 @Component({
@@ -64,6 +64,6 @@ export class ProfileComponent implements OnInit {
   get city() { return this.reactForm.get('city'); }
   get state() { return this.reactForm.get('state'); }
   get Address() { return this.reactForm.get('Address'); }
-  get profPicUploader() { return this.uploadObj?.files[0].name}
+  get profPicUploader() { return this.uploadObj?.files[0].name;}
 
 }

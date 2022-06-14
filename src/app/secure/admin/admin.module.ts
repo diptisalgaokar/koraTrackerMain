@@ -16,6 +16,7 @@ import { NumericTextBoxAllModule, UploaderModule } from '@syncfusion/ej2-angular
 import { DialogModule } from '@syncfusion/ej2-angular-popups';
 import { DropDownListModule } from '@syncfusion/ej2-angular-dropdowns';
 
+
 @NgModule({
   declarations: [
     ProjectsComponent,

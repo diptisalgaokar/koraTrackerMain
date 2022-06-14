@@ -11,6 +11,7 @@ import { DropDownListModule } from '@syncfusion/ej2-angular-dropdowns';
 import { TextBoxModule } from '@syncfusion/ej2-angular-inputs';
 import { NumericTextBoxModule } from '@syncfusion/ej2-angular-inputs';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { UploaderModule } from '@syncfusion/ej2-angular-inputs';
 
 @NgModule({
   declarations: [
@@ -28,8 +29,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     NumericTextBoxModule,
     TextBoxModule,
     FormsModule, 
-    ReactiveFormsModule
-
+    ReactiveFormsModule,
+    UploaderModule
   ]
 })
 export class EmployeeModule { }

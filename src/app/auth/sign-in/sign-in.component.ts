@@ -1,5 +1,5 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
-import { FormControl, FormGroup, Validators, FormsModule, AbstractControl, FormBuilder } from '@angular/forms';
+import { FormControl, FormGroup, Validators, FormsModule, AbstractControl, FormBuilder,ReactiveFormsModule } from '@angular/forms';
 import { FormValidators } from '@syncfusion/ej2-angular-inputs';
 import { faLock } from '@fortawesome/free-solid-svg-icons';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';

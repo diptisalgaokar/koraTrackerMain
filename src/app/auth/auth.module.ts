@@ -6,9 +6,8 @@ import { SignInComponent } from './sign-in/sign-in.component';
 import { ResetPasswordComponent } from './reset-password/reset-password.component';
 import { AuthInitComponent } from './auth-init/auth-init.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { ReactiveFormsModule } from '@angular/forms';
-
-
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { UploaderModule } from '@syncfusion/ej2-angular-inputs';
 
 @NgModule({
   declarations: [
@@ -20,7 +19,14 @@ import { ReactiveFormsModule } from '@angular/forms';
     CommonModule,
     AuthRoutingModule,
     FontAwesomeModule,
+    FormsModule,
     ReactiveFormsModule,
+    UploaderModule
+  ],
+  exports:[
+    FormsModule,
+    ReactiveFormsModule,
+    UploaderModule
   ]
 })
 export class AuthModule { }
