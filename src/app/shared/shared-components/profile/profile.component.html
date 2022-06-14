@@ -1,4 +1,3 @@
-<p>profileee44-- works!</p>
 <div class="col-lg-12 control-section">
     <div class="content-wrapper" style="margin-bottom: 25px;">
         <div class="formtitle">
@@ -60,7 +59,7 @@
               <div class="e-float-input row e-uploader-left-pad">                           
                   <span class="e-float-line">&nbsp;</span>
                   <label for="profPic" class="e-float-text">Profile pic</label>
-                  <ejs-uploader [buttons]="buttons" [asyncSettings]="asyncSettings" [autoUpload]="autoUpload" formControlName="profPicUploader" id="profPicUploader"></ejs-uploader>
+                  <ejs-uploader [buttons]="buttons" [asyncSettings]="asyncSettings" [autoUpload]="autoUpload" formControlName="profPicUploader" [showFileList]="['showfilelist']" id="profPicUploader" requiredFileType="image/png"></ejs-uploader>
                   <div class="e-uploader-border">&nbsp;</div>
               </div>
           </div>

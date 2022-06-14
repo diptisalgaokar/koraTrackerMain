@@ -21,6 +21,7 @@ export class ReportsComponent {
     public pageSettings!: Object;
     public commands!: CommandModel[];
 
+  @ViewChild('sample')
   public listObj!: DropDownListComponent;
  // define the JSON of data
   constructor(){
@@ -36,12 +37,12 @@ export class ReportsComponent {
   // set the value to select an item based on mapped value at initial rendering
   public value: number = 1;    
 
-  public onChange(args: any): void {
+  public onChange(args: any): void {    
     var val:number = 0;
-     if (this.listObj.value.toString() !== null){        
-      var val = Number(this.listObj.value.toString());
+    
+    if (this.listObj.value.toString() !== null){    
+       val = Number(this.listObj.value.toString());
      }
-     //alert('Val=='+val);
       // update the text and value property values in property panel based on selected item in DropDownList
       //show work desc based on the project selected
       this.prjWorkData = workData[val];
@@ -54,9 +55,8 @@ export class ReportsComponent {
   }
   ngAfterViewInit(e: any): void {        
       // call the change event's function after initialized the component.
-      setTimeout(()=>
-    {
-      this.onChange(e);
+      setTimeout(()=>{
+        this.onChange(e);
    })
   }
 }
