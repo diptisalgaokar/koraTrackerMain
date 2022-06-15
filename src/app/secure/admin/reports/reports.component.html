@@ -2,7 +2,7 @@
     <div class="col-lg-9  content-wrapper" style="height: 150px;">
         <div style="width:250px; padding-top: 40px;">
           <span class="e-input-group"><b>Select a Project:</b></span>
-            <ejs-dropdownlist id="project" #sample [dataSource]="data" (change)="onChange($event)" [value]="value" [fields]="fields" [placeholder]="waterMark" [popupHeight]="height"></ejs-dropdownlist>
+            <ejs-dropdownlist id="project" #sample [dataSource]="data" (change)="onChange($event)" [value]="value" [fields]="fields" [placeholder]="waterMark" [popupHeight]="height" cssClass="e-custom"></ejs-dropdownlist>
         </div>
     </div>
     <div class="col-lg-3 property-section cBoth">
@@ -13,7 +13,7 @@
                     <ejs-grid [dataSource]='prjWorkData' allowPaging='true' [pageSettings]='pageSettings' [editSettings]='editSettings'>
                         <e-columns>
                             <e-column field='WorkDescID' headerText='Desc ID' width='120' textAlign='Right' isPrimaryKey='true'></e-column>
-                            <e-column field='WorkDesc' headerText='Work Desc' width='120' textAlign='Left' [validationRules]='projectnamerules'></e-column>
+                            <e-column field='WorkDesc' headerText='Work Desc' width='120' textAlign='center' [validationRules]='projectnamerules'></e-column>
                             <e-column field='WorkDate' headerText='Work Desc Date' width='130' type='date' format='yMd' editType='datepickeredit' textAlign='Right'></e-column>
                             <e-column field='AssignedTo' headerText='Author' width='150' editType='dropdownedit' textAlign='Left'></e-column>
                             <!--e-column headerText='Manage Records' width='160' [commands]='commands'></e-column-->

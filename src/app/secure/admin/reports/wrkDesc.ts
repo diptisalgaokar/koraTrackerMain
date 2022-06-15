@@ -4,7 +4,7 @@ export let workData: Object[]= [['None'],
             WorkDescID: 1, 
             WorkDesc: 'Jio Management--task1', 
             WorkDate: new Date(8364186e5),
-            AssignedTo: 'Gandhar Sanzgiri'
+            AssignedTo: 'Nash Kirti'
         },
         {
             WorkDescID: 2, 
@@ -22,7 +22,7 @@ export let workData: Object[]= [['None'],
             WorkDescID: 4, 
             WorkDesc: 'Jio Management--task4', 
             WorkDate: new Date(8364186e5),
-            AssignedTo: 'Gandhar Sanzgiri'
+            AssignedTo: 'Nash Kirti'
         },
         {
             WorkDescID: 5, 

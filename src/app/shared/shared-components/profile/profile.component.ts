@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl, FormGroup, Validators, FormsModule, ReactiveFormsModule, AbstractControl, PatternValidator } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule, FormControl, FormGroup, Validators, AbstractControl, PatternValidator } from '@angular/forms';
 import { FormValidators, RemovingEventArgs, UploaderComponent, UploaderModule } from '@syncfusion/ej2-angular-inputs';
 import { Event } from '@syncfusion/ej2-base';
 
@@ -9,10 +9,8 @@ import { Event } from '@syncfusion/ej2-base';
   styleUrls: ['./profile.component.scss']
 })
 export class ProfileComponent implements OnInit {
-
   reactForm: FormGroup;
   public uploadObj: UploaderComponent | undefined; 
-
   constructor() {
     this.reactForm = new FormGroup({
       'check': new FormControl('', [FormValidators.required]),
@@ -45,11 +43,9 @@ export class ProfileComponent implements OnInit {
       this.uploadObj?.setDisabledState; 
       this.uploadObj?.cancel();
       this.reactForm.reset();
-    }
-    
+    }    
   }
-     
-    
+        
 /* Pic uploader controls*/ 
   public buttons = { browse: "Choose File", clear: "Clear", upload: "Upload" };
   public asyncSettings = {

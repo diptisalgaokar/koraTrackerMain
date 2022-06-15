@@ -1,14 +1,15 @@
 //import { HttpModule, JsonpModule } from '@angular/http';
-import { NgModule, ModuleWithProviders, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { NgModule, ModuleWithProviders, CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
-import { UploaderModule } from '@syncfusion/ej2-angular-inputs';
+import { UploaderComponent, UploaderModule } from '@syncfusion/ej2-angular-inputs';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { Page404Component } from './page404/page404.component';
+import { SharedComponentsModule } from './shared/shared-components/shared-components.module';
 //import { NgbModule } from '@angular-bootstrap/ng-bootstrap';
 
 import { GridModule } from '@syncfusion/ej2-angular-grids';
@@ -19,11 +20,8 @@ import { DropDownListModule } from '@syncfusion/ej2-angular-dropdowns';
     
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    Page404Component    
-  ],
-  imports: [
+    imports: [
+    BrowserModule,
     FormsModule,
     ReactiveFormsModule,
     GridModule,
@@ -32,12 +30,20 @@ import { DropDownListModule } from '@syncfusion/ej2-angular-dropdowns';
     DialogModule,    
     CommonModule, 
     //HttpModule, 
-    //JsonpModule, 
-    BrowserModule,
+    //JsonpModule,   
     AppRoutingModule,
     UploaderModule,
     DropDownListModule, 
     //NgModule
+    SharedComponentsModule
+  ],
+  declarations: [
+    AppComponent,
+    Page404Component 
+  ],
+  schemas: [
+    CUSTOM_ELEMENTS_SCHEMA,
+    NO_ERRORS_SCHEMA
   ],
   providers: [],
   bootstrap: [AppComponent]

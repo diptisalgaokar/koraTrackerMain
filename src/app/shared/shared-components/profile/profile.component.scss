@@ -63,3 +63,13 @@ th {
     display: none;
     visibility: hidden;
 }
+.nowrapCaption{
+    white-space: nowrap;
+}
+.frmInputLabels{
+    color: rgba(0, 0, 0, 0.70);
+    font-weight: bold;
+}
+.frmInputLabels:focus {
+    color: rgb(5, 68, 104);
+}

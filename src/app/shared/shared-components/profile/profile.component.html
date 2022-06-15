@@ -1,15 +1,15 @@
-<div class="col-lg-12 control-section">
+<div class="col-lg-12 control-section gridContDivWidth">
     <div class="content-wrapper" style="margin-bottom: 25px;">
         <div class="formtitle">
             <span>Update Employee Details</span>
         </div>
   
         <form id="formId" [formGroup]="reactForm" #formDir="ngForm" class="form-horizontal" novalidate (ngSubmit)="onSubmit()">
-             <div class="form-group">
+            <div class="form-group">
                 <div class="e-float-input">
                     <input id="check" type="text" formControlName="check">
                     <span class="e-float-line"></span>
-                    <label for="check" class="e-float-text">User Name</label>
+                    <label for="check" class="e-float-text frmInputLabels">User Name</label>
                 </div>
                 <div *ngIf="reactForm.controls['check'].errors">
                     <div *ngIf="reactForm.controls['check'].errors?.['required'] && reactForm.controls['check'].touched" class="e-error">
@@ -21,7 +21,7 @@
                 <div class="e-float-input">
                     <input id="email_check" type="text" formControlName="email_check" floatLabelType="Auto" floatLabelType="Auto">
                     <span class="e-float-line"></span>
-                    <label for="email_check" class="e-float-text">Email</label>
+                    <label for="email_check" class="e-float-text frmInputLabels">Email</label>
                 </div>
                 <div *ngIf="reactForm.controls['email_check'].errors">
                     <div *ngIf="reactForm.controls['email_check'].errors?.['email'] && reactForm.controls['email_check'].touched" class="e-error">
@@ -33,42 +33,42 @@
               <div class="e-float-input">
                   <input id="firstname" formControlName="firstname">
                   <span class="e-float-line"></span>
-                  <label for="firstname" class="e-float-text">First Name</label>
+                  <label for="firstname" class="e-float-text frmInputLabels">First Name</label>
               </div>
               <div *ngIf="reactForm.controls['firstname'].errors">
                   <div *ngIf="reactForm.controls['firstname'].errors?.['required'] && reactForm.controls['firstname'].touched" class="e-error">
                       This field is required.
                   </div>
               </div>
-          </div>
+            </div>
           
-          <div class="form-group">
+            <div class="form-group">
               <div class="e-float-input">
                   <input id="lastname" formControlName="lastname">
                   <span class="e-float-line"></span>
-                  <label for="lastname" class="e-float-text">Lastname</label>
+                  <label for="lastname" class="e-float-text frmInputLabels">Lastname</label>
               </div>
               <div *ngIf="reactForm.controls['lastname'].errors">
                   <div *ngIf="reactForm.controls['lastname'].errors?.['required'] && reactForm.controls['lastname'].touched" class="e-error">
                       This field is required.
                   </div>
               </div>
-          </div>
+            </div>
                   
-          <div class="form-group">
+            <div class="form-group">
               <div class="e-float-input row e-uploader-left-pad">                           
                   <span class="e-float-line">&nbsp;</span>
-                  <label for="profPic" class="e-float-text">Profile pic</label>
+                  <label for="profPic" class="e-float-text frmInputLabels">Profile pic</label>
                   <ejs-uploader [buttons]="buttons" [asyncSettings]="asyncSettings" [autoUpload]="autoUpload" formControlName="profPicUploader" [showFileList]="['showfilelist']" id="profPicUploader" requiredFileType="image/png"></ejs-uploader>
                   <div class="e-uploader-border">&nbsp;</div>
               </div>
-          </div>
+            </div>
   
           <div class="form-group">
               <div class="e-float-input">
                   <input id="tel" type="text" formControlName="tel">
                   <span class="e-float-line"></span>
-                  <label for="tel" class="e-float-text">Contact no</label>
+                  <label for="tel" class="e-float-text frmInputLabels">Contact no</label>
               </div>
               <div *ngIf="reactForm.controls['tel'].errors ">
                   <div *ngIf="(reactForm.controls['tel'].errors?.['required'] && reactForm.controls['tel'].touched) || (reactForm.controls['tel'].errors?.['pattern'])" pattern="^((\\+91-?)|0)?[0-9]{10}$" class="e-error">
@@ -80,7 +80,7 @@
                 <div class="e-float-input">
                     <input id="date_check" type="text" formControlName="date_check">
                     <span class="e-float-line"></span>
-                    <label for="date_check" class="e-float-text">DOB</label>
+                    <label for="date_check" class="e-float-text frmInputLabels">DOB</label>
                     <div *ngIf="reactForm.controls['date_check'].errors ">
                         <div *ngIf="reactForm.controls['date_check'].errors?.['date'] && reactForm.controls['date_check'].touched" class="e-error">
                             Please enter a valid date.
@@ -93,7 +93,7 @@
               <div class="e-float-input">
                   <textarea rows="4" id="Address" name="Address" formControlName="Address"></textarea>
                   <span class="e-float-line"></span>
-                  <label class="e-float-text" for="address">Address</label>
+                  <label class="e-float-text frmInputLabels" for="address">Address</label>
               </div>
           </div>
   
@@ -101,7 +101,7 @@
               <div class="e-float-input">
                   <input id="city" formControlName="city">
                   <span class="e-float-line"></span>
-                  <label for="city" class="e-float-text">City</label>
+                  <label for="city" class="e-float-text frmInputLabels">City</label>
                   <div *ngIf="reactForm.controls['city'].errors ">
                       <div *ngIf="reactForm.controls['city'].errors?.['required'] && reactForm.controls['city'].touched" class="e-error">
                           This field is required.
@@ -114,7 +114,7 @@
               <div class="e-float-input">
                   <input id="state" formControlName="state">
                   <span class="e-float-line"></span>
-                  <label for="state" class="e-float-text">State</label>
+                  <label for="state" class="e-float-text frmInputLabels">State</label>
                   <div *ngIf="reactForm.controls['state'].errors ">
                       <div *ngIf="reactForm.controls['state'].errors?.['required'] && reactForm.controls['state'].touched" class="e-error">
                           This field is required.
@@ -123,12 +123,12 @@
               </div>
           </div>
           <div class="row">
-              <div style="width: 320px;margin:0px auto;height: 100px;padding-top: 25px;">
+              <div style="width: 420px;margin:0px auto;height: 100px;padding-top: 25px;">
                   <div style="display: inline-block;">
-                      <button id="validateSubmit" class="samplebtn e-control e-btn e-primary" type="submit" style="height:40px;width: 150px;" data-ripple="true">Update Employee</button>
+                      <button id="validateSubmit" class="primary-Btn btn-right nowrapCaption" type="submit" style="height:40px;width: 200px;" data-ripple="true" >Update Employee</button>
                   </div>
                   <div style="float: right;">
-                      <button id="resetbtn" class="samplebtn e-control e-btn" type="reset" style="height:40px;width: 150px;" data-ripple="true">Clear</button>
+                      <button id="resetbtn" class="primary-Btn btn-right" type="reset" style="height:40px;width: 150px;" data-ripple="true">Clear</button>
                   </div>
               </div>
           </div>

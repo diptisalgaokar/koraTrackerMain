@@ -3,7 +3,7 @@ export let projData: Object[] = [
         ProjectID: 1, 
         ProjectName: 'Jio Management', 
         ProjectDate: new Date(8364186e5),
-        AssignedTo: 'Gandhar Sanzgiri'
+        AssignedTo: 'Nash Kirti'
     },
 
     {

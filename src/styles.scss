@@ -69,3 +69,29 @@ label{
 .gridContDivWidth{
     width:850px;
 }
+.pagingNos{
+    color: rgb(5, 68, 104);
+}
+
+//grid custom css
+.e-grid .e-headercell { 
+    background-color : rgb(5, 68, 104); 
+    color: #ffffff;
+    font-weight: bolder;
+    text-align: center;
+} 
+// current selected page item 
+.e-grid .e-pager .e-currentitem, .e-pager .e-currentitem:hover, .e-grid .e-pager .e-currentitem:active{ 
+    background-color:rgb(5, 68, 104);
+    border: none;
+  } 
+
+  .e-custom.e-input-group:not(.e-float-icon-left):not(.e-float-input)::before, 
+.e-custom.e-input-group:not(.e-float-icon-left):not(.e-float-input)::after { 
+  height: 1px; 
+  background: rgb(5, 68, 104);
+} 
+.e-custom .e-dropdownbase .e-list-item.e-active, 
+.e-custom .e-dropdownbase .e-list-item.e-active.e-hover { 
+  color: rgb(5, 68, 104);
+} 
