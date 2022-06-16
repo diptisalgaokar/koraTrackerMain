@@ -12,6 +12,11 @@ import { TextBoxModule } from '@syncfusion/ej2-angular-inputs';
 import { NumericTextBoxModule } from '@syncfusion/ej2-angular-inputs';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { UploaderModule } from '@syncfusion/ej2-angular-inputs';
+import { GridModule } from '@syncfusion/ej2-angular-grids';
+import { ToolbarModule } from '@syncfusion/ej2-angular-navigations';
+import { NumericTextBoxAllModule } from '@syncfusion/ej2-angular-inputs';
+import { DialogModule } from '@syncfusion/ej2-angular-popups';
+
 
 @NgModule({
   declarations: [
@@ -30,7 +35,11 @@ import { UploaderModule } from '@syncfusion/ej2-angular-inputs';
     TextBoxModule,
     FormsModule, 
     ReactiveFormsModule,
-    UploaderModule
+    UploaderModule,
+    GridModule,
+    ToolbarModule,
+    NumericTextBoxAllModule,
+    DialogModule
   ]
 })
 export class EmployeeModule { }

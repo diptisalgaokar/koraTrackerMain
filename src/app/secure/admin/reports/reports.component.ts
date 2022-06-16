@@ -10,7 +10,7 @@ import { DropDownListComponent } from '@syncfusion/ej2-angular-dropdowns';
   providers: [ EditService, PageService, CommandColumnService],
   styleUrls: ['./reports.component.scss']
 })
-export class ReportsComponent {
+export class ReportsComponent implements OnInit{
     public data!: Object[];
     public prjWorkData!: Object;
     public editSettings!: Object;
@@ -58,5 +58,10 @@ export class ReportsComponent {
       setTimeout(()=>{
         this.onChange(e);
    })
+  }
+
+  ngOnInit(): void {
+    
+    return this.onChange(this.value);
   }
 }

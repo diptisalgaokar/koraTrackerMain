@@ -70,6 +70,18 @@ th {
     color: rgba(0, 0, 0, 0.70);
     font-weight: bold;
 }
-.frmInputLabels:focus {
-    color: rgb(5, 68, 104);
-}
+
+ /* For Success state */
+ .e-float-input.frmInputLabels label.e-float-text,
+ .e-float-input.frmInputLabels input:focus ~ label.e-float-text,
+ .e-float-input.frmInputLabels input:valid ~ label.e-float-text {
+   color: #22b24b;
+ }
+
+ /* For Warning state */
+ .e-float-input.e-warning label.e-float-text,
+ .e-float-input.e-warning input:focus ~ label.e-float-text,
+.e-float-input.e-warning input:valid ~ label.e-float-text {
+   color: #ffca1c;
+ }
+ $input-focus-color:rgb(5, 68, 104);
